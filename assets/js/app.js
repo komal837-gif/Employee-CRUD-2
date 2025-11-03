@@ -161,9 +161,9 @@ const onUpdateEmp=()=>{
 	let trChild = tr.children;
 	cl(trChild)
 	
-	trChild[1].innerText = UPDATED_OBJ.name;
-	trChild[2].innerText = UPDATED_OBJ.dept;
-	trChild[3].innerText = UPDATED_OBJ.salary;
+	trChild[2].innerText = UPDATED_OBJ.name;
+	trChild[3].innerText = UPDATED_OBJ.dept;
+	trChild[4].innerText = UPDATED_OBJ.salary;
 	
 	AddEmpBtn.classList.remove("d-none")
 	updateEmpBtn.classList.add("d-none")
