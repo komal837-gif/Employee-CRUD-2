@@ -145,9 +145,9 @@ const onUpdateEmp=()=>{
 		salary:empSalaryControl.value,
 		EmpId:UPDATE_ID,
 	}
-	employeeForm.reset();
 	cl(UPDATED_OBJ)
-	
+	employeeForm.reset()
+
 	let getIndex = EmpArr.findIndex(emp=>emp.EmpId === UPDATE_ID)
 	cl(getIndex)
 	
