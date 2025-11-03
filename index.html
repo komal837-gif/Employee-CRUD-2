@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<head>
+		<title>employee task</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+		<link rel="stylesheet" href="./assets/css/style.css"></link>
+	</head>
+	<body>
+		<div class="container-fluid mt-5">
+			<h2>Employee CRUD</h2>
+			<div class="row">
+				<div class="col-md-4 mb-4">
+					 <div class="card">
+						<div class="card-body">
+							<form id="employeeForm">
+								<div class="form-group">
+									<label for="empname">Employee Name</label>
+									<input type="text" class="form-control" id="empname" required></input>
+								</div>
+								<div class="form-group">
+									<label for="empDept">Department</label>
+									<input type="text" class="form-control" id="empDept" required></input>
+								</div>
+								<div class="form-group">
+									<label for="empSalary">Salary</label>
+									<input type="number" class="form-control" id="empSalary" required></input>
+								</div>
+								
+								<button id="AddEmpBtn" type="submit" class="btn btn-outline-primary btn-sm btn-block">Add Employee</button>
+								<button id="updateEmpBtn" type="button" class="btn btn-outline-primary btn-sm btn-block d-none">Update Employee</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<div class="table-responsive">
+								<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>Sr No.</th>
+										<th>ID</th>
+										<th>Name</th>
+										<th>Department</th>
+										<th>Salary</th>
+										<th>Edit</th>
+										<th>Remove</th>
+									</tr>
+								</thead>
+								<tbody id= "employeeContainer">
+									<!-- <tr> -->
+										<!-- <td>1</td> -->
+										<!-- <td>Jhon Doe</td> -->
+										<!-- <td>IT</td> -->
+										<!-- <td>25000</td> -->
+										<!-- <td><i class="fas fa-edit fa-2x text-success"></i></td> -->
+										<!-- <td><i class="fas fa-trash-alt fa-2x text-danger"></i></td> -->
+									<!-- </tr> -->
+								</tbody>
+							</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="./assets/js/app.js"></script>
+	</body>
+</html>
